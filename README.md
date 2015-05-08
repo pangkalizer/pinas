@@ -2,6 +2,9 @@
 
 This gem provides hierarchical listing of Philippine location. 
 
+![Pinas](http://en.wikipedia.org/wiki/Philippines#/media/File:Flag_of_the_Philippines.svg)
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -28,33 +31,38 @@ Or install it yourself as:
 
 The gem provides ActiveRecord model `Pinas::Location` in 4 levels of locations
 
-    $ # All regions
-    $ Pinas::Location.regions
+    # All regions
+    Pinas::Location.regions
 
-    $ # All provinces
-    $ Pinas::Location.provinces
+    # All provinces
+    Pinas::Location.provinces
 
-    $ # All towns
-    $ Pinas::Location.towns
+    # All towns
+    Pinas::Location.towns
 
-    $ # All barangays
-    $ Pinas::Location.barangays
+    # All barangays
+    Pinas::Location.barangays
 
 Or you can get sub locations
 
-    $ # get single location
-    $ batangas_province = Pinas::Location.where(name: 'BATANGAS').first # returns Batangas Province
+    # get single location
+    batangas_province = Pinas::Location.where(name: 'BATANGAS').first # returns Batangas Province
     
-    $ # get all towns in Batangas
-    $ towns = batangas_province.towns
+    # get all towns in Batangas
+    towns = batangas_province.towns
 
 Get location coordinates
 
-    $ batangas_province.coordinates
+    batangas_province.coordinates
 
 Get formatted display
 
-    $ batangas_province.formatted_display
+    batangas_province.formatted_display
+
+Or you may want to extend the model
+
+    class Location < Pinas::Location
+    end
 
 
 ## Caveats
@@ -64,6 +72,7 @@ At the moment this gem only supports Rails 4.x using Mysql database
 
 ## TODO
 
+* Write tests
 * Support other ORM 
 * Provide geo-polygons
 
