@@ -1,7 +1,7 @@
 require "pinas/version"
 
 module Pinas
-  # Your code goes here...
+  autoload :Location, "pinas/location"
 end
 
 require 'pinas/railtie' if defined?(Rails)

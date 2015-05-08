@@ -18,7 +18,6 @@ class CreatePinasTables < ActiveRecord::Migration
     end
     add_index :locations, :parent_id
     add_index :locations, :postcode
-    add_index :locations, :uri
     add_index :locations, [:name, :location_type, :postcode]
   end
 end

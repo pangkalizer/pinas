@@ -22,7 +22,7 @@ Or install it yourself as:
 
     $ rake db:migrate
 
-    $ rake pinas:load
+    $ rake pinas:load_data
 
 
 ## Contributing

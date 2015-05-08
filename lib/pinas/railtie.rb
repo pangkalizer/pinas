@@ -6,5 +6,4 @@ module Pinas
     end
 
   end
-
 end

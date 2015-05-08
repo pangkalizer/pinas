@@ -15,12 +15,13 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
   spec.rubyforge_project = "pinas"
 
-  spec.files         = `git ls-files`.split("\n")
-  spec.test_files    = `git ls-files -- spec/*`.split("\n")
+  spec.files         = `git ls-files`.split($/)
+  spec.executables   = spec.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
+  spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
   spec.required_ruby_version = ">= 1.9.2"
-  spec.add_dependency("railties", ">= 3.2.6", "< 5")
+  spec.add_dependency "railties", ">= 3.2.6", "< 5"
   spec.add_dependency "geocoder", "~> 1.2"
   spec.add_dependency "awesome_nested_set", "~> 3.0"
 
