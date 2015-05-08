@@ -41,11 +41,21 @@ The gem provides ActiveRecord model `Pinas::Location` in 4 levels of locations
     $ Pinas::Location.barangays
 
 Or you can get sub locations
+
     $ # get single location
     $ batangas_province = Pinas::Location.where(name: 'BATANGAS').first # returns Batangas Province
     
     $ # get all towns in Batangas
     $ towns = batangas_province.towns
+
+Get location coordinates
+
+    $ batangas_province.coordinates
+
+Get formatted display
+
+    $ batangas_province.formatted_display
+
 
 ## Caveats
 
