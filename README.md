@@ -59,7 +59,13 @@ Get formatted display
 
 ## Caveats
 
-At the moment this gem supports Rails 4.x using Mysql database
+At the moment this gem only supports Rails 4.x using Mysql database
+
+
+## TODO
+
+* Support other ORM 
+* Provide geo-polygons
 
 
 ## Contributing
