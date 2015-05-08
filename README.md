@@ -2,7 +2,7 @@
 
 This gem provides hierarchical listing of Philippine location. 
 
-![Pinas](http://en.wikipedia.org/wiki/Philippines#/media/File:Flag_of_the_Philippines.svg)
+![Pinas](philippines.png)
 
 
 ## Installation
