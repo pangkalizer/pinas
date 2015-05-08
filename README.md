@@ -1,6 +1,6 @@
 # Pinas
 
-| ![Pinas](philippines.png) | This gem provides hierarchical listing of Philippine location. 
+| ![Pinas](philippines.png) | This gem provides hierarchical listing of Philippine location. |
 
 ## Installation
 
