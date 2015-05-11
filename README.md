@@ -1,8 +1,9 @@
 # Pinas
 
 [![Gem Version](https://badge.fury.io/rb/pinas.svg)](http://badge.fury.io/rb/pinas)
+[![Build Status](https://travis-ci.org/pangkalizer/pinas.svg?branch=master)](https://travis-ci.org/pangkalizer/pinas)
 
-| ![Pinas](philippines.png) | This gem provides hierarchical listing of Philippine location. |
+![Pinas](philippines.png) This gem provides hierarchical listing of Philippine location. 
 
 ## Installation
 
