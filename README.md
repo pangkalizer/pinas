@@ -66,7 +66,7 @@ Or you may want to extend the model
 
 ## Caveats
 
-At the moment this gem only supports Rails 4.x using Mysql database
+At the moment this gem only supports Ruby >= 1.9.3, Rails 4.x and Mysql adapter
 
 
 ## TODO

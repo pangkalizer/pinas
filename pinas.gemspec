@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
-  spec.required_ruby_version = ">= 1.9"
+  spec.required_ruby_version = ">= 1.9.3"
   spec.add_dependency "railties", ">= 3.2.6", "< 5"
   spec.add_dependency "geocoder", "~> 1.2"
   spec.add_dependency "awesome_nested_set", "~> 3.0"
