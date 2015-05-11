@@ -1,5 +1,7 @@
 # Pinas
 
+[![Gem Version](https://badge.fury.io/rb/pinas.svg)](http://badge.fury.io/rb/pinas)
+
 | ![Pinas](philippines.png) | This gem provides hierarchical listing of Philippine location. |
 
 ## Installation
