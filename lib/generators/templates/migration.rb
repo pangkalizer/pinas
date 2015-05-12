@@ -14,7 +14,7 @@ class CreatePinasTables < ActiveRecord::Migration
       t.string      :postcode
       t.string      :longitude
       t.string      :latitude
-      t.timestamps null: false
+      t.timestamps null: false, default: Time.now
     end
     add_index :locations, :parent_id
     add_index :locations, :postcode
