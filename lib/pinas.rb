@@ -1,4 +1,5 @@
 require "pinas/version"
+require "pinas/loader"
 
 module Pinas
   autoload :Location, "pinas/location"
